@@ -1,0 +1,11 @@
+name = "cf-proxy"
+workers_dev = true
+main = "src/index.ts"
+compatibility_date = "2024-05-13"
+
+[vars]
+API_ROUTES = { gllm = "https://generativelanguage.googleapis.com", opapi = "https://api.openai.com" }
+ROUTES = { docker = "https://registry-1.docker.io", quay = "https://quay.io", gcr = "https://gcr.io", k8s-gcr = "https://k8s.gcr.io", k8s = "https://registry.k8s.io", ghcr = "https://ghcr.io", cloudsmith = "https://docker.cloudsmith.io" }
+
+[placement]
+mode = "smart"

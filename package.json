@@ -1,0 +1,23 @@
+{
+	"name": "cf-proxy",
+	"version": "1.0.0",
+	"description": "A Cloudflare Workers proxy for various services",
+	"main": "dist/index.ts",
+	"scripts": {
+		"build": "wrangler deploy",
+		"dev": "wrangler dev src/index.ts"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/daiaji/cf-proxy.git"
+	},
+	"author": "daiaji",
+	"license": "MIT",
+	"devDependencies": {
+		"typescript": "^4.9.4",
+		"wrangler": "^2.12.2"
+	},
+	"dependencies": {
+		"@cloudflare/workers-types": "^4.20240512.0"
+	}
+}
