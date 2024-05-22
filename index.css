@@ -1,0 +1,114 @@
+html,
+body {
+    width: 100%;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    word-break: break-all;
+}
+
+@media (max-width: 500px) {
+    h1 {
+        margin-top: 80px;
+    }
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 50px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.input-container {
+    position: relative;
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.url {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #bfbfbf;
+    text-align: center;
+}
+
+input:focus {
+    outline: none;
+}
+
+.bar {
+    content: '';
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    background: #00bfb3;
+    transition: 0.2s ease transform;
+    transform: scaleX(0);
+}
+
+.url:focus~.bar {
+    transform: scaleX(1);
+}
+
+.btn {
+    line-height: 38px;
+    background-color: #00bfb3;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    padding: 5px;
+    width: 160px;
+}
+
+.tips,
+.example {
+    color: #7b7b7b;
+    position: relative;
+    align-self: flex-start;
+    margin-left: 7.5em;
+}
+
+.footer {
+    position: sticky;
+    top: calc(100% - 3.5em);
+    /* 其他 footer 样式 */
+}
+
+.footer a {
+    color: #3294ea;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

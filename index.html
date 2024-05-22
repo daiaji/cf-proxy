@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>GitHub 文件加速</title>
+    <link rel="shortcut icon" href="/cf-proxy/favicon.png">
+    <link rel="stylesheet" href="/cf-proxy/index.css">
+</head>
+
+<body>
+    <img src="/cf-proxy/favicon.png" alt="Logo" class="logo">
+    <h1>GitHub 文件加速</h1>
+    <form action="./" method="get" class="form-container" target="_blank" onsubmit="toSubmit(event)">
+        <div class="input-container">
+            <input class="url" name="q" type="text" placeholder="键入Github文件链接" required>
+            <div class="bar"></div>
+        </div>
+        <input class="btn" type="submit" value="下载">
+    </form>
+    <div class="footer">
+        项目基于Cloudflare Workers，开源于GitHub <a href="https://github.com/hunshcn/gh-proxy">hunshcn/gh-proxy</a>
+    </div>
+    <script>
+        function toSubmit(e) {
+            e.preventDefault();
+            const urlInput = document.getElementsByName('q')[0];
+            window.open(location.href.substr(0, location.href.lastIndexOf('/') + 1) + urlInput.value);
+            return false;
+        }
+    </script>
+</body>
+
+</html>
