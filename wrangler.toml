@@ -4,8 +4,8 @@ main = "src/index.ts"
 compatibility_date = "2024-05-13"
 
 [vars]
-API_ROUTES = { gllm = "https://generativelanguage.googleapis.com", opapi = "https://api.openai.com" }
-ROUTES = { docker = "https://registry-1.docker.io", quay = "https://quay.io", gcr = "https://gcr.io", k8s-gcr = "https://k8s.gcr.io", k8s = "https://registry.k8s.io", ghcr = "https://ghcr.io", cloudsmith = "https://docker.cloudsmith.io" }
+API_ROUTES = { gllm = "https://generativelanguage.googleapis.com", opapi = "https://api.openai.com", tgapi = "https://api.telegram.org"}
+ROUTES = { cloudsmith = "https://docker.cloudsmith.io", docker = "https://registry-1.docker.io", gcr = "https://gcr.io", ghcr = "https://ghcr.io", k8s = "https://registry.k8s.io", k8s-gcr = "https://k8s.gcr.io", quay = "https://quay.io"}
 
 [placement]
 mode = "smart"
